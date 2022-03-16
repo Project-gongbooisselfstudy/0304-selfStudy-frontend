@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>HOME</title>
+<link href="bootstrap4/bootstrap.min.css" rel="stylesheet" type="text/CSS">
+<link href="footerstop.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">공부는 셀프</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ">
+        <li class="nav-item active">
+          <a class="nav-link" href="./service introduction.html"> 서비스 소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./makingquiz.html">문제 제작</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./ranking.html">랭킹 </a>
+          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">오답노트</a>
+            <a class="dropdown-item" href="#">스크립트</a>
+            <div class="dropdown-divider"></div>
+  
+          </div>
+        </li>
+      </ul>
+   
+    </div>
+  </nav>
+  
+  
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel"><i class="fas fa-sign-in-alt"></i> &nbsp;&nbsp;Log In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fab fa-google"></i>&nbsp;&nbsp;Log in with Google</button>
+              <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fas fa-envelope"></i>&nbsp;&nbsp;Log in with Email</button>
+            </div>
+            <div class="col-md-6">
+              <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fas fa-envelope"></i>&nbsp;&nbsp;Sing Up with Email </button>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-3">
+        <div class="col-6">
+            <h1>공부는 셀프입니다.</h1>
+            <br>
+            <br>
+            <br>
+            <h2>당신의 공부는 공부는 셀프에서 이루어집니다.</h2>
+            <p>간단한 소개 들어가야 했나...</p>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+                  Log in
+              </button>
+              </li>
+          </ul>
+          <form accept-charset="UTF-8" role="form" method="post" action="">
+            <legend>로그인</legend>
+            <div class="form-group">
+                <label for="username-email">이메일 or 아이디</label>
+                <input name="user_id" value='' id="username-email" placeholder="E-mail or Username" type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="password">비밀번호</label>
+                <input name="password" id="password" value='' placeholder="Password" type="password" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Login"/>
+            </div>
+            <hr />
+            <div class="form-group">
+              <a href="./join.html">회원가입 </a>
+            </div>
+        </form>
+           
+        </div>
+        <div class="col-6">                       <!--허용된 최대 폭 class="img-fluid w-100"-->
+            <img src="./image/LogoSelf.jpg" class="img-fluid w-100">
+        </div>
+    </div>
+<!--푸터바 아래 고정,, 푸터바 어디어디 있지..-->
+<!-- Footer-->
+<div id="footer">
+<footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; STUDY IS SELF by 0304. 2022</p></div>
+</footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
