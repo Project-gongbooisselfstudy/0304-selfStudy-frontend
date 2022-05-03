@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AiFillFileAdd, AiFillEdit,AiFillFolderOpen } from "react-icons/ai";
 import IN from "./images/IN.png";
+
 import styles from "./Introduction.module.css";
 import Header from "./Header.js";
 import Footer from "./Footer.js";
@@ -16,7 +17,7 @@ function Introduction() {
     </div><h1 className={styles.center}>
         공부는 셀프입니다.
         <div className={styles.IN}>
-        <img
+        <img 
           src={IN} />
         </div>
       </h1>
